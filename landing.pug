@@ -1,0 +1,34 @@
+-var titulo = "Titulo Principal"
+-var titulos = ["Titulo Principal", "Subtitulo1", "Subtitulo2", "Subtitulo3"]
+-var usuario = "David"
+mixin caja
+  .caja(imagen, titulo, contenido)
+        .caja__imagen: img(src="../images/imagen.png", alt="alt")
+        .caja__contenido
+          h3 #{titulos[1]}
+          p Lorem ipsum dolor sit amet
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Document
+    link(rel="stylesheet", href="./../css/ejercicio-pug.css", attr)
+  body
+    header
+      h1 PlatziGames
+      if usuario 
+        a Hola #{usuario}
+      else 
+        a.boton Registro
+    section.intro 
+      div.intro__imagen: img(src="../images/imagen.png", alt="alt")
+      .intro__contenido 
+        h2 #{titulos[0]} 
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium voluptatem consectetur unde iste earum mollitia blanditiis consequuntur vel quod, iure assumenda rem error!
+          span Distinctio officiis cupiditate sed tempore illum atque.
+        a.boton Leer más 
+    main.contenido
+      each titulo in titulos
+        +caja("imagen.png", titulo, "Lorem ipsum dolor sit amet consectetur adipisicing elit")
