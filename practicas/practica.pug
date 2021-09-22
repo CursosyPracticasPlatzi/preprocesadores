@@ -1,0 +1,15 @@
+include componentes/config.pug
+doctype
+html(lang='en')
+  include componentes/head.pug
+  body
+    div 
+      header
+        div.titulo-caja: h1 #{titulos[0]}
+      main
+        include componentes/article__presentacion.pug
+        include componentes/article__carrusel.pug
+        include componentes/article__integrantes.pug
+      include componentes/footer.pug
+    script. 
+      var reproductor = videojs("fm-video", {fluid: true,});

@@ -1,0 +1,32 @@
+.carrusel {
+  margin-top: 10px;
+  padding: 10px;
+  background: $color-titulo;
+  @include borde-redondo;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+  }
+  &__item {
+    position: relative;
+    min-width: 227px;
+    max-width: 400px;
+    min-height: 380px;
+    min-height: 391px;
+    margin-right: 10px;
+    padding: 8px;
+    align-self: center;
+    background-color: $color-fondo-cards;
+    @include borde-redondo;
+    @include sombra;
+    scroll-snap-align: center;
+    img {
+      width: 100%;
+      @include borde-redondo;
+    }
+  }
+}

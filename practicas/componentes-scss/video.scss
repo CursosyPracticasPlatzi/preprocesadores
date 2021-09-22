@@ -1,0 +1,22 @@
+.fm-video {
+  width: 100%;
+}
+.fm-video,
+.video-js .vjs-control-bar {
+  background-color: #f3e9e0;
+  color: #cd6f48;
+}
+.video-js .vjs-load-progress div {
+  background-color: $color-fondo-cajas;
+}
+.video-js .vjs-play-progress {
+  background-color: $color-titulo;
+}
+.vjs-big-play-centered .vjs-big-play-button {
+  background: transparent;
+  color: transparent;
+  border: none;
+}
+.video-js .vjs-play-control .vjs-icon-placeholder:active {
+  border: none;
+}

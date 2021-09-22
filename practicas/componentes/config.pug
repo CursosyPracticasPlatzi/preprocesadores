@@ -1,0 +1,20 @@
+-var titulos = ["Actuando en amor", "Nuestras actividades", "Evento navideño por los adultos mayores", "Ayuda solidaria en Villa el Salvador - Enero 2020", "Evento Navideño 2019", "Integrantes", "Siguenos en nuestras redes", "Derechos reservados <sup>R</sup> 2021"]
+
+-var integrantes = ["Jerson Filios", "Dayana Macen", "Yahaira Arica", "Johana Filios", "Carolina Amaya", "Judith Ordoñez", "Junior Rojas", "Nicolle Mora", "Sandy Jines", "Mariel Laly", "Jonathan Castillo"]
+
+-var carrusel__text = ["¡Alistando las canastas navideñas!", "¡¡¡Somos una familia grande!!!", "Despidiéndonos de José u.u", "Organizando las primeras donaciones.", "Una familia albergada en una carpa temporalmente recibiendo donaciones.", "Entregando un donativo.", "Reuniendo a los niños para jugar :3", "Con papá Noel flaco.", "Entregando lonche a los niños"]
+
+-var carrusel__alt = ["foto-navideño1", "foto-navideño2", "foto-navideño3", "foto-donacion1", "foto-donacion2", "foto-donacion3", "foto-navideño1", "foto-navideño2", "foto-navideño3"]
+
+-var carrusel__imagen = ["https://i.postimg.cc/y8XQV6jn/navide-o1.jpg", "https://i.postimg.cc/3wkvtnkp/navide-o2.jpg", "https://i.postimg.cc/W1HDqg54/navide-o3.jpg", "https://i.postimg.cc/wTgpQXHF/donacion1.jpg","https://i.postimg.cc/sg2Ct3Mh/donacion2.jpg","https://i.postimg.cc/cCWVTWq6/donacion3.jpg","https://i.postimg.cc/BvxppKJc/evento1.jpg","https://i.postimg.cc/ZK2LhcRx/evento2.jpg","https://i.postimg.cc/zv3TsbYQ/evento3.jpg"]
+
+mixin integrante(image, integrante)
+  .integrante 
+    figure.persona 
+      img(src= image, alt="integrante")
+      figcaption.nombre= integrante
+
+mixin carrusel__item(image, alt, text, especial)
+  .carrusel__item
+    img(class= especial src= image, alt= alt)
+    .description: figcaption= text

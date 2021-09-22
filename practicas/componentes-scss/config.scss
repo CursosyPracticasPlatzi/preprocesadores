@@ -1,0 +1,25 @@
+$color-titulo: #c45b48;
+$color-fondo-cajas: #f3e9e0;
+$color-naranja-tenue: #cd6f48;
+$color-fondo: #d7d2bb;
+$color-carrusel-fondo: #e9b788;
+$color-carrusel-cards: #ce6337;
+$color-fondo-cards: #b34837;
+
+@font-face {
+  font-family: anna;
+  src: url(../../../actuando-en-amor/fonts/anna-clara.ttf) format("truetype");
+}
+@font-face {
+  font-family: maha;
+  src: url(../../../actuando-en-amor/fonts/Maharlika-Regular.ttf)
+    format("truetype");
+}
+
+@mixin sombra {
+  box-shadow: 0px 0px 9px 0px #000000d1;
+}
+
+@mixin borde-redondo {
+  border-radius: 20px;
+}

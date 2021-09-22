@@ -1,0 +1,13 @@
+extend componentes/plantilla.pug
+block contenidos
+  main 
+    section.principal
+      h2 TITULO PRINCIPAL
+      p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      a.boton Ver más
+    aside.aside
+      h2 MENU
+      ul 
+        each enlace in enlaces
+          li=enlace
